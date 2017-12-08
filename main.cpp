@@ -19,13 +19,13 @@ void output(Pizza& p);
 
 int main()
 {
-	Pizza pizza;
+    Pizza pizza;
 
     displayMenu();
     input(pizza);
     output(pizza);
 
-	return 0;
+    return 0;
 }
 
 void displayMenu()
@@ -51,14 +51,14 @@ void displayMenu()
     cout<<"-------------------------------------------------------------\n";
     cout<<endl;
 }
-    
+
 void input(Pizza& p)
 {
     cout<<"What type of pizza would you like? ";
     int type;
     cin>>type;
     p.setType(type);
-    
+
     cout<<endl;
 
     cout<<"What size of pizza? ";
@@ -67,12 +67,12 @@ void input(Pizza& p)
     p.setSize(size);
 
     cout<<endl;
-    
+
     cout<<"How many toppings altogether? ";
     int toppings;
     cin>>toppings;
     p.setNumberOfToppings(toppings);
-    
+
     cout<<endl;
 } 
 
